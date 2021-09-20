@@ -1,3 +1,4 @@
+#include <time.h>
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -6,8 +7,22 @@
 
 int main(void)
 {
-  printf("paint_card(10, 20)  = %.2f\n", paint_card(10, 20));
-  printf("move_counter(20, 20)  = %.2f\n", move_counter(20, 20));
 
+
+  // 'C' 'D' 'H' 'S'
+    // int i = 10;
+  // char suit = 'j';
+
+  // int moveCounter = Move_Counter(i,i);
+  // printf("MOVE = %d\n", moveCounter);
+
+  // printf("%.2d\n", i);
+  // printf("%c\n", suit);
+  
+  int Card = 10;
+  char Suit = 'C'; // 'C' 'D' 'H' 'S'
+  
+  Paint_Card(Card, Suit);
+  
   return 0;
 }
