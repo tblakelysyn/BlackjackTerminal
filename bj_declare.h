@@ -1,14 +1,10 @@
-// If not included to any file
-#ifndef BJ_DECLARE_H
-
-// Declare macro as a flag that specifies arith.h is included
-#define BJ_DECLARE_H
+#ifndef BJ_DECLARE_H    // If not included to any file
+#define BJ_DECLARE_H    // Declare macro as a flag that specifies bj_declare.h is included
 
 // Declare all functions
 int moveCounter (int x, int y);
 char cardIntToChar (int Card);
 void paintCard (int x, char y);
-
 char Club(void);
 char Diamond(void);
 char Heart(void);
@@ -61,11 +57,6 @@ char cardIntToChar (int Card)
     return charArray[Card];
 
 }
-
-
-
-
-
 
 char Club()
 {
