@@ -31,6 +31,8 @@ void paintCard (int Card, char Suit)
 
 }
 
+
+// TODO: This doesn't return correctly, work out pointer situation
 char cardIntToChar (int Card)
 {
     /* STRINGS
@@ -50,11 +52,12 @@ char cardIntToChar (int Card)
     */
 
    // TODO: store globally (waste of memory initialising each call)
-    char charArray[15] = ('A', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'j');
+                            // 0 ,  1 ,  2 ,  3 ,  4 ,  5 ,  6 ,  7 ,  8 ,  9 , 10 , 11 , 12 , 13 , 14 ,
+    char cardCharChart[15] = {'A', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'j'};
     
-    printf("%c", charArray[Card]);
+    printf("%c", cardCharChart[Card]);
     
-    return charArray[Card];
+    return cardCharChart[Card];
 
 }
 

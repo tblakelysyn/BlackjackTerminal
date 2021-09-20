@@ -7,7 +7,7 @@
 
 int main(void)
 {
-  int Card = 1;
+  int Card = 14;
   int Suit = Diamond();
   paintCard(Card, Suit);
   
