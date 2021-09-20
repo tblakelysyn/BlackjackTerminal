@@ -11,6 +11,10 @@ void printClub(void);
 void printDiamond(void);
 void printHeart(void);
 void printSpade(void);
+char Club(void);
+char Diamond(void);
+char Heart(void);
+char Spade(void);
 
 #endif
 
@@ -24,48 +28,37 @@ int moveCounter (int x, int y)
 
 
 
-void paintCard (int x, char y)
+
+
+
+char Club()
+{
+    return 'C';
+}
+
+char Diamond()
+{
+    return 'D';
+}
+
+char Heart()
+{
+    return 'H';
+}
+
+char Spade()
+{
+    return 'S';
+}
+
+void paintCard (int Card, char Suit)
 {
     srand(time(NULL));
-    int cycle_between_two = rand() % 2;
-
-    int Card = x;
-    char Suit = y;
-         
-   if (cycle_between_two == 0) {
+             
+   if ((rand() % 2) == 0) {
        printf(" _____\n|%c   |\n| %.2d |\n|___%c|\n", Suit, Card, Suit);
    } else {
        printf(" _____\n|   %c|\n| %.2d |\n|%c___|\n", Suit, Card, Suit);
    }
 
 }
-
-
-
-void printClub(void)
-{
-    printf("C");
-}
-
-
-
-void printDiamond(void)
-{
-    printf("D");
-}
-
-
-
-void printHeart(void)
-{
-    printf("H");
-}
-
-
-
-void printSpade(void)
-{
-    printf("S");
-}
-
-

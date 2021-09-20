@@ -12,7 +12,7 @@ int main(void)
   // 'C' 'D' 'H' 'S'
   
   int Card = 10;
-  char Suit = 'C'; // 'C' 'D' 'H' 'S'
+  char Suit = Heart();
   
   paintCard(Card, Suit);
   
