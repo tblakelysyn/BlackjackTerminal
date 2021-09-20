@@ -7,13 +7,8 @@
 
 int main(void)
 {
-
-
-  // 'C' 'D' 'H' 'S'
-  
-  int Card = 10;
-  char Suit = Heart();
-  
+  int Card = 1;
+  int Suit = Diamond();
   paintCard(Card, Suit);
   
   return 0;
