@@ -11,5 +11,6 @@ int main(void)
   int Suit = Diamond();
   paintCard(Card, Suit);
   
+  printf("Hello?");
   return 0;
 }
