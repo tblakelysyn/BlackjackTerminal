@@ -11,5 +11,5 @@ int main(void)
   int Suit = Diamond();
   paintCard(Card, Suit);
   
-  return 0 ;
+  return 0;
 }
