@@ -5,12 +5,18 @@
 #define BJ_DECLARE_H
 
 // Declare all functions
-int Move_Counter (int x, int y);
-void Paint_Card (int x, char y);
+int moveCounter (int x, int y);
+void paintCard (int x, char y);
+void printClub(void);
+void printDiamond(void);
+void printHeart(void);
+void printSpade(void);
 
 #endif
 
-int Move_Counter (int x, int y)
+
+/* TODO */
+int moveCounter (int x, int y)
 {
     int result_move = x + y;
     return (result_move);
@@ -18,7 +24,7 @@ int Move_Counter (int x, int y)
 
 
 
-void Paint_Card (int x, char y)
+void paintCard (int x, char y)
 {
     srand(time(NULL));
     int cycle_between_two = rand() % 2;
@@ -31,5 +37,35 @@ void Paint_Card (int x, char y)
    } else {
        printf(" _____\n|   %c|\n| %.2d |\n|%c___|\n", Suit, Card, Suit);
    }
+
 }
+
+
+
+void printClub(void)
+{
+    printf("C");
+}
+
+
+
+void printDiamond(void)
+{
+    printf("D");
+}
+
+
+
+void printHeart(void)
+{
+    printf("H");
+}
+
+
+
+void printSpade(void)
+{
+    printf("S");
+}
+
 
