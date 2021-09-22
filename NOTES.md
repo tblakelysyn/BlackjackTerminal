@@ -17,12 +17,11 @@ OR
 	|   S|
 	| NN |
 	|S___|
-	
+
 
 %% TODO
 
-
-
-// make array
-
+// make array of this? Store it somewhere, at least...
 char card[35] = "\t\n\t _____\n\t|%c   |\n\t| %.2d |\n\t|___%c|\n\t"
+
+cardIntToChar() not working.
