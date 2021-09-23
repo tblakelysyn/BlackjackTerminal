@@ -1,5 +1,9 @@
 {
     "files.associations": {
-        "bj_declare.h": "c"
+        "bj_declare.h": "c",
+        "stdbool.h": "c",
+        "stdlib.h": "c",
+        "time.h": "c",
+        "stdio.h": "c"
     }
 }

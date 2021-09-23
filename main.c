@@ -1,12 +1,21 @@
 
 #include "bj_declare.h"
 
+void init ()
+{
+  /* This function is for all initialisations required. 
+     Run once, at start of main (before anything else) */
+  srand(time(NULL));
+}
+
 int main(void)
 {
-  int Card = 14;
-  int Suit = Diamond();
-  paintCard(Card, Suit);
-  cardIntToChar(Card);
+  init();
 
-  return 0;
+  int Card = 12;
+  int Suit = Diamond();
+
+  return EXIT_SUCCESS;
 }
+
+
