@@ -76,6 +76,7 @@ char cardIntToChar(int Card)
 
 int cardShuffleAndDraw(int Card)
 {
+    // TODO: Build deck
     int ShuffledDeck = cardIntToChar(Card);
     return ShuffledDeck;
 }

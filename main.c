@@ -12,8 +12,9 @@ int main(void)
 {
   init();
 
-  int Card = 12;
+  int Card = 13;
   int Suit = Diamond();
+  printf("Card: %d = cardIntToChar: %c\n", Card, cardIntToChar(Card));
 
   return EXIT_SUCCESS;
 }
