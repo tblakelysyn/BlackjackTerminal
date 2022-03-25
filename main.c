@@ -12,7 +12,9 @@ int main(void)
 {
   init();
 
-  int Card = 13;
+  int Card = RandomInt(13);
+  Card = cardShuffleAndDraw(Card);
+
   int Suit = Diamond();
   printf("Card: %d = cardIntToChar: %c\n", Card, cardIntToChar(Card));
 

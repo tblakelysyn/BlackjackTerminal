@@ -13,7 +13,7 @@ char Heart(void);
 char Spade(void);
 
 int moveCounter(int x, int y);
-int RandomInt();
+int RandomInt(int MAX);
 
 char cardIntToChar(int Card);
 int cardShuffleAndDraw(int Card);
@@ -21,7 +21,6 @@ int cardShuffleAndDraw(int Card);
 void paintCard(int x, char y);
 
 #endif
-
 
 /* TODO: Address the move counter situation */
 int moveCounter(int x, int y)
@@ -32,7 +31,7 @@ int moveCounter(int x, int y)
 
 void paintCard(int Card, char Suit)
 {
-   if ((RandomInt() % 2) == 0) {
+   if ((RandomInt(14) % 2) == 0) {
        printf(" _____\n|%c   |\n| %.2d |\n|___%c|\n", Suit, Card, Suit);
    } else {
        printf(" _____\n|   %c|\n| %.2d |\n|%c___|\n", Suit, Card, Suit);
